@@ -5,8 +5,8 @@ export default {
     fields: [
         {
             name: 'body',
-            type: 'string',
-            title: 'Brødtekst',
+            type: 'array', 
+            of: [{type: 'block'}]
         }
     ]
 }

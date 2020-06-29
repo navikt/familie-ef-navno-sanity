@@ -4,21 +4,33 @@ export default {
     title: 'Avsnitt',
     fields: [
         {
-            title: 'Tittel',
-            name: 'tittel',
+            title: 'Undertittel',
+            name: 'undertittel',
             type: 'string'
         },
         {
-            title: 'Innhold', 
-            name: 'innhold',
-            type: 'array', 
-            of: [{type: 'block'}]
+            name: 'brodtekster',
+            type: 'array',
+            title: 'Brødtekst',
+            of: [{
+                type: 'reference',
+                to: [{ type: 'brodtekst' }],
+            }]
         },
         {
-            title: 'Innhold', 
-            name: 'innhold2',
+            title: 'Innhold',
+            name: 'avsnitt_innhold', 
             type: 'array', 
-            of: [{type: 'block'}]
+            of: [{type: 'block'}],
+        },
+        {
+            name: 'knapp',
+            type: 'array',
+            title: 'Knapp',
+            of: [{
+                type: 'reference',
+                to: [{type: 'knapp'}],
+            }]
         }
     ]
 }
