@@ -13,6 +13,12 @@ export default {
             name: 'innhold',
             type: 'array', 
             of: [{type: 'block'}]
+        },
+        {
+            title: 'Innhold', 
+            name: 'innhold2',
+            type: 'array', 
+            of: [{type: 'block'}]
         }
     ]
 }
