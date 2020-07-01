@@ -3,10 +3,12 @@ import createSchema from 'part:@sanity/base/schema-creator'
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
-import avsnitt from './avsnitt';
+import avsnitt_overgangstonad from './avsnitt_overgangsstonad';
+import avsnitt_barnetilsyn from './avsnitt_barnetilsyn';
 import brodtekst from './brodtekst';
 import knapp from './knapp';
 import artikkel from './artikkel';
+import side from './side';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,9 +18,11 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
-    avsnitt,
+    avsnitt_overgangstonad,
+    avsnitt_barnetilsyn,
     brodtekst,
     knapp,
     artikkel,
+    side,
   ])
 })
