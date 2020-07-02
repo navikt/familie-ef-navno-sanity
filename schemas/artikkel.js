@@ -29,7 +29,9 @@ export default {
                 type: 'reference',
                 to: [
                     { type: 'avsnitt_overgangstonad' },
-                    { type: 'avsnitt_barnetilsyn' }
+                    { type: 'avsnitt_barnetilsyn' },
+                    { type: 'avsnitt_skolepengerstonad'},
+                    { type: 'avsnitt_tilleggsstonad'},
                 ],
             }],
         },
