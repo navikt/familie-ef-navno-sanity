@@ -1,6 +1,6 @@
 export default {
     name: 'knapp',
-    type: 'object',
+    type: 'document',
     title: 'Knapp',
     fields: [
       {

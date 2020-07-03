@@ -9,6 +9,7 @@ import brodtekst from './brodtekst';
 import knapp from './knapp';
 import artikkel from './artikkel';
 import side from './side';
+import ikon from './ikon';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -24,5 +25,6 @@ export default createSchema({
     knapp,
     artikkel,
     side,
+    ikon,
   ])
 })

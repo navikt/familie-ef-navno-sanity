@@ -22,6 +22,11 @@ export default {
             validation: Rule => Rule.required(),
         },
         {
+            name: 'ikon',
+            title: 'Ikon',
+            type: 'ikon',
+        },
+        {
             name: 'avsnitt',
             type: 'array',
             title: 'avsnitt',

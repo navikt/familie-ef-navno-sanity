@@ -19,6 +19,11 @@ export default {
             }]
         },
         {
+            title: 'Skal teksten alltid bli stående?',
+            name: 'filtrer_blir_staende',
+            type: 'boolean'
+        },
+        {
             title: 'Vises hvis man huker av "Jeg er i arbeid"?',
             name: 'filtrer_i_arbeid',
             type: 'boolean'
