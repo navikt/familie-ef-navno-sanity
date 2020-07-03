@@ -5,6 +5,8 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import avsnitt_overgangstonad from './avsnitt_overgangsstonad';
 import avsnitt_barnetilsyn from './avsnitt_barnetilsyn';
+import avsnitt_skolepengerstønad from './avsnitt_skolepengerstønad';
+import avsnitt_tilleggstønad from './avsnitt_tilleggsstønad';
 import brodtekst from './brodtekst';
 import knapp from './knapp';
 import artikkel from './artikkel';
@@ -21,6 +23,8 @@ export default createSchema({
     /* Your types here! */
     avsnitt_overgangstonad,
     avsnitt_barnetilsyn,
+    avsnitt_skolepengerstønad,
+    avsnitt_tilleggstønad,
     brodtekst,
     knapp,
     artikkel,
