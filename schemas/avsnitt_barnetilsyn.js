@@ -4,6 +4,12 @@ export default {
     title: 'Avsnitt barnetilsyn',
     fields: [
         {
+            title: 'Side, artikkel',
+            description: 'Benyttes kun for oversikt i sanity',
+            type: 'string',
+            name: 'oversikt'
+        },
+        {
             title: 'Innhold',
             name: 'avsnitt_innhold',
             type: 'array',
@@ -79,5 +85,11 @@ export default {
             name: 'filtrer_sykdom',
             type: 'boolean'
         },
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'avsnitt_innhold',
+            subtitle: 'oversikt',
+        }
+    }
 }

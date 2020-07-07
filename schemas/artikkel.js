@@ -60,7 +60,7 @@ export default {
     preview: {
         select: {
             title: 'tittel_i_panel',
-            subtitle: 'tittel_i_liste',
+            subtitle: 'artikkel_id',
         }
     }
 }
