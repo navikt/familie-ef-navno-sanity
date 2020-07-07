@@ -25,6 +25,11 @@ export default {
                 ],
             }],
         },
+        {
+            name: 'alertstripe',
+            type: 'alertstripe',
+            title: 'Alertstripe'
+        }
     ],
     orderings: [
         {

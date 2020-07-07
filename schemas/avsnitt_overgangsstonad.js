@@ -7,16 +7,53 @@ export default {
             title: 'Innhold',
             name: 'avsnitt_innhold',
             type: 'array',
-            of: [{ type: 'block' }],
+            of: [
+                {
+                    type: 'block',
+                    marks: {
+                        annotations: [
+                            {
+                                name: 'link',
+                                type: 'object',
+                                title: 'External link',
+                                fields: [
+                                    {
+                                        name: 'href',
+                                        type: 'url',
+                                        title: 'URL'
+                                    },
+                                    {
+                                        title: 'Open in new tab',
+                                        name: 'blank',
+                                        type: 'boolean'
+                                    }
+                                ]
+                            },
+                            {
+                                name: 'internalLink',
+                                type: 'object',
+                                title: 'Internal link',
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        title: 'Reference',
+                                        to: [
+                                            { type: 'artikkel' },
+                                            // other types you may want to link to
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
             name: 'knapp',
-            type: 'array',
+            type: 'knapp',
             title: 'Knapp',
-            of: [{
-                type: 'reference',
-                to: [{ type: 'knapp' }],
-            }]
         },
         {
             title: 'Skal teksten alltid bli stående?',
@@ -77,6 +114,11 @@ export default {
             title: 'Vises hvis man huker av "Jeg mangler barnepass"?',
             name: 'filtrer_barnepass',
             type: 'boolean'
+        },
+        {
+            name: 'alertstripe',
+            type: 'alertstripe',
+            title: 'Alertstripe',
         },
     ]
 }
