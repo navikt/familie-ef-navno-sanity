@@ -16,6 +16,15 @@ export default {
             of: [
                 {
                     type: 'block',
+                    of: [
+                        { 
+                            name: 'tallreferanse',
+                            type: 'reference',
+                            to: [
+                                {type: 'tall'}
+                            ]
+                        }
+                    ],
                     marks: {
                         annotations: [
                             {
@@ -52,8 +61,8 @@ export default {
                                 ]
                             }
                         ]
-                    }
-                }
+                    },
+                },
             ]
         },
         {
@@ -126,6 +135,11 @@ export default {
             type: 'alertstripe',
             title: 'Alertstripe',
         },
+        {
+            name: 'kalkulator', 
+            type:  'boolean',
+            title: 'Skal det komme en kalkulator etter dette avsnittet?'
+        }
     ],
     preview: {
         select: {
