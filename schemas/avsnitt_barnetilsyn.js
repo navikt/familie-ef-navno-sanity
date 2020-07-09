@@ -85,6 +85,11 @@ export default {
             name: 'filtrer_sykdom',
             type: 'boolean'
         },
+        {
+            name: 'kalkulator', 
+            type:  'boolean',
+            title: 'Skal det komme en kalkulator etter dette avsnittet?'
+        },
     ],
     preview: {
         select: {
