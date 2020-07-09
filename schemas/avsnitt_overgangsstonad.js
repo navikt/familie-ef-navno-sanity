@@ -59,6 +59,22 @@ export default {
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                name: 'talltest',
+                                type: 'object',
+                                title: 'Talltest',
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        title: 'Reference',
+                                        to: [
+                                            { type: 'tall' },
+                                            // other types you may want to link to
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },

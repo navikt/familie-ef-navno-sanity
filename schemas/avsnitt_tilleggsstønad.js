@@ -65,6 +65,21 @@ export default {
                 to: [{ type: 'knapp' }],
             }]
         },
+        {
+            title: 'Skal teksten alltid bli stående?',
+            name: 'filtrer_blir_staende',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg tar utdanning"?',
+            name: 'filtrer_utdanning',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg er arbeidssøker"?',
+            name: 'filtrer_arbeidssoker',
+            type: 'boolean'
+        },
     ],
     preview: {
         select: {
