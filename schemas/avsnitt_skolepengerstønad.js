@@ -58,12 +58,13 @@ export default {
         },
         {
             name: 'knapp',
-            type: 'array',
+            type: 'knapp',
             title: 'Knapp',
-            of: [{
-                type: 'reference',
-                to: [{ type: 'knapp' }],
-            }]
+        },
+        {
+            name: 'alertstripe',
+            type: 'alertstripe',
+            title: 'Alertstripe',
         },
     ],
     preview: {

@@ -37,6 +37,7 @@ export default {
                     { type: 'avsnitt_barnetilsyn' },
                     { type: 'avsnitt_skolepengerstonad' },
                     { type: 'avsnitt_tilleggsstonad' },
+                    { type: 'avsnitt_alene' },
                     { type: 'tabell' },
                 ],
             }],

@@ -58,12 +58,8 @@ export default {
         },
         {
             name: 'knapp',
-            type: 'array',
+            type: 'knapp',
             title: 'Knapp',
-            of: [{
-                type: 'reference',
-                to: [{ type: 'knapp' }],
-            }]
         },
         {
             title: 'Skal teksten alltid bli stående?',
@@ -79,6 +75,11 @@ export default {
             title: 'Vises hvis man huker av "Jeg er arbeidssøker"?',
             name: 'filtrer_arbeidssoker',
             type: 'boolean'
+        },
+        {
+            name: 'alertstripe',
+            type: 'alertstripe',
+            title: 'Alertstripe',
         },
     ],
     preview: {
