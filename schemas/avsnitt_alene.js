@@ -68,7 +68,7 @@ export default {
         },
         {
             title: 'Vises hvis man huker av "Jeg er alene pga. samlivsbrudd"?',
-            name: 'filtrer_samvlivsbrudd',
+            name: 'filtrer_samlivsbrudd',
             type: 'boolean'
         },
         {
