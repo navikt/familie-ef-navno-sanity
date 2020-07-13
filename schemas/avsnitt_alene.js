@@ -1,7 +1,7 @@
 export default {
-    name: 'avsnitt_barnetilsyn',
+    name: 'avsnitt_alene',
     type: 'document',
-    title: 'Avsnitt barnetilsyn',
+    title: 'Avsnitt alene med barn',
     fields: [
         {
             title: 'Side, artikkel',
@@ -54,7 +54,7 @@ export default {
                         ]
                     }
                 }
-            ],
+            ]
         },
         {
             name: 'knapp',
@@ -67,24 +67,49 @@ export default {
             type: 'boolean'
         },
         {
+            title: 'Vises hvis man huker av "Jeg er alene pga. samlivsbrudd"?',
+            name: 'filtrer_samvlivsbrudd',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg har vært alene med barn fra fødsel"?',
+            name: 'filtrer_fra_fodsel',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg er alene pga. dødsfall"?',
+            name: 'filtrer_dodsfall',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg har mer enn 60 % av den daglige omsorgen"?',
+            name: 'filtrer_mer_enn_60',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg har mer mindre enn 60 % av den daglige omsorgen"?',
+            name: 'filtrer_mindre_enn_60',
+            type: 'boolean'
+        },
+        {
             title: 'Vises hvis man huker av "Jeg er i arbeid"?',
             name: 'filtrer_i_arbeid',
             type: 'boolean'
         },
         {
-            title: 'Vises hvis man huker av "Jeg etablerer egen virksomhet"?',
-            name: 'filtrer_egen_virksomhet',
+            title: 'Vises hvis man huker av "Jeg tar eller skal ta utdanning"?',
+            name: 'filtrer_utdanning',
             type: 'boolean'
         },
         {
-            title: 'Vises hvis man huker av "Jeg er syk"?',
-            name: 'filtrer_sykdom',
+            title: 'Vises hvis man huker av "Jeg er arbeidssøker"?',
+            name: 'filtrer_arbeidssoker',
             type: 'boolean'
         },
         {
-            name: 'kalkulator', 
-            type:  'boolean',
-            title: 'Skal det komme en kalkulator etter dette avsnittet?'
+            title: 'Vises hvis man huker av "Ikke i arbeid, utdanning, eller søker jobb?',
+            name: 'filter_ikke_arbeid',
+            type: 'boolean',
         },
         {
             name: 'alertstripe',
