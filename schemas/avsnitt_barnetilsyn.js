@@ -43,18 +43,32 @@ export default {
                                     {
                                         name: 'reference',
                                         type: 'reference',
-                                        title: 'Reference',
                                         to: [
                                             { type: 'artikkel' },
                                             // other types you may want to link to
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                name: 'tallreferanse',
+                                type: 'object',
+                                title: 'Talltest',
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        to: [
+                                            { type: 'tall' },
+                                            // other types you may want to link to
+                                        ]
+                                    }
+                                ]
                             }
                         ]
-                    }
-                }
-            ],
+                    },
+                },
+            ]
         },
         {
             name: 'knapp',
@@ -82,8 +96,8 @@ export default {
             type: 'boolean'
         },
         {
-            name: 'kalkulator', 
-            type:  'boolean',
+            name: 'kalkulator',
+            type: 'boolean',
             title: 'Skal det komme en kalkulator etter dette avsnittet?'
         },
         {

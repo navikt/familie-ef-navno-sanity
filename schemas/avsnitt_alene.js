@@ -43,17 +43,31 @@ export default {
                                     {
                                         name: 'reference',
                                         type: 'reference',
-                                        title: 'Reference',
                                         to: [
                                             { type: 'artikkel' },
                                             // other types you may want to link to
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                name: 'tallreferanse',
+                                type: 'object',
+                                title: 'Talltest',
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        to: [
+                                            { type: 'tall' },
+                                            // other types you may want to link to
+                                        ]
+                                    }
+                                ]
                             }
                         ]
-                    }
-                }
+                    },
+                },
             ]
         },
         {
@@ -68,7 +82,7 @@ export default {
         },
         {
             title: 'Vises hvis man huker av "Jeg er alene pga. samlivsbrudd"?',
-            name: 'filtrer_samvlivsbrudd',
+            name: 'filtrer_samlivsbrudd',
             type: 'boolean'
         },
         {
@@ -108,7 +122,7 @@ export default {
         },
         {
             title: 'Vises hvis man huker av "Ikke i arbeid, utdanning, eller søker jobb?',
-            name: 'filter_ikke_arbeid',
+            name: 'filtrer_ikke_arbeid',
             type: 'boolean',
         },
         {
