@@ -16,6 +16,7 @@ import ikon from './ikon';
 import alertstripe from './alertstripe';
 import tall from './tall';
 import tabell from './tabell';
+import dato from './dato';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -38,5 +39,6 @@ export default createSchema({
     alertstripe,
     tall,
     tabell,
+    dato,
   ])
 })

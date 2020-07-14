@@ -39,13 +39,16 @@ export default {
                                 name: 'internalLink',
                                 type: 'object',
                                 title: 'Internal link',
+                                blockEditor: {
+                                    icon: () => 'Intern lenke'
+                                },
                                 fields: [
                                     {
                                         name: 'reference',
                                         type: 'reference',
                                         to: [
                                             { type: 'artikkel' },
-                                            // other types you may want to link to
+                                            { type: 'avsnitt_overgangstonad' },
                                         ]
                                     }
                                 ]
@@ -53,13 +56,34 @@ export default {
                             {
                                 name: 'tallreferanse',
                                 type: 'object',
-                                title: 'Talltest',
+                                title: 'Tall',
+                                blockEditor: {
+                                    icon: () => 'Tall'
+                                },
                                 fields: [
                                     {
                                         name: 'reference',
                                         type: 'reference',
                                         to: [
                                             { type: 'tall' },
+                                            // other types you may want to link to
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                name: 'datoreferanse',
+                                type: 'object',
+                                title: 'Datoreferanse',
+                                blockEditor: {
+                                    icon: () => 'Dato'
+                                },
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        to: [
+                                            { type: 'dato' },
                                             // other types you may want to link to
                                         ]
                                     }
@@ -141,9 +165,19 @@ export default {
             title: 'Alertstripe',
         },
         {
-            name: 'kalkulator', 
-            type:  'boolean',
+            name: 'kalkulator',
+            type: 'boolean',
             title: 'Skal det komme en kalkulator etter dette avsnittet?'
+        },
+        {
+            name: 'dokument',
+            title: 'Expandpanel for dokumentasjon',
+            type: 'array',
+            of: [
+                {
+                    type: 'block',
+                }
+            ],
         }
     ],
     preview: {
