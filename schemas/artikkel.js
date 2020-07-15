@@ -18,6 +18,7 @@ export default {
         {
             name: 'artikkel_id',
             type: 'number',
+            description: 'IKKE endre denne hvis feltet er utfylt',
             title: 'Artikkel-ID',
             validation: Rule => Rule.required(),
         },

@@ -10,6 +10,7 @@ export default {
         },
         {
             name: 'side_id',
+            description: 'IKKE endre denne',
             type: 'number',
             title: 'Side-ID',
             validation: Rule => Rule.required(),

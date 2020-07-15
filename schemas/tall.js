@@ -4,12 +4,13 @@ export default{
     title: 'Tall',
     fields: [
         {
-            tile: 'Navn på tallet',
+            title: 'Navn på tallet',
             type: 'string',
+            description: 'IKKE endre navnet på eksisterende tall',
             name: 'navn',
         },
         {
-            tile: 'Tallverdi',
+            title: 'Tallverdi',
             type: 'number',
             name: 'tallverdi',
         }
