@@ -8,7 +8,6 @@ import avsnitt_barnetilsyn from './avsnitt_barnetilsyn';
 import avsnitt_skolepengerstønad from './avsnitt_skolepengerstønad';
 import avsnitt_tilleggstønad from './avsnitt_tilleggsstønad';
 import avsnitt_alene from './avsnitt_alene';
-import brodtekst from './brodtekst';
 import knapp from './knapp';
 import artikkel from './artikkel';
 import side from './side';
@@ -31,7 +30,6 @@ export default createSchema({
     avsnitt_skolepengerstønad,
     avsnitt_tilleggstønad,
     avsnitt_alene,
-    brodtekst,
     knapp,
     artikkel,
     side,

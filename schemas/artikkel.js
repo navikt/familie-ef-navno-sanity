@@ -30,7 +30,7 @@ export default {
         {
             name: 'avsnitt',
             type: 'array',
-            title: 'avsnitt',
+            title: 'Avsnitt og tabeller',
             of: [{
                 type: 'reference',
                 to: [

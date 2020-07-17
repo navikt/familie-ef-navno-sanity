@@ -11,7 +11,7 @@ export default {
         {
             name: 'tabelldata',
             title: 'Tabelldata',
-            description: 'Øverste raden blir overskriftene på hver kolonne',
+            description: 'IKKE endre navnet på eksisterende datoer, kun selve datoen i felt to.',
             type: 'table',
         }
     ],
