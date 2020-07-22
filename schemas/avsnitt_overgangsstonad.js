@@ -88,6 +88,24 @@ export default {
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                name: 'filreferanse',
+                                type: 'object',
+                                title: 'Filreferanse',
+                                blockEditor: {
+                                    icon: () => 'PDF'
+                                },
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        to: [
+                                            { type: 'pdf' },
+                                            // other types you may want to link to
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
