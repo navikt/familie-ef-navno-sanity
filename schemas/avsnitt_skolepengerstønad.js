@@ -95,7 +95,7 @@ export default {
                                 type: 'object',
                                 title: 'Filreferanse',
                                 blockEditor: {
-                                    icon: () => 'PDF'
+                                    icon: () => 'Fil'
                                 },
                                 fields: [
                                     {

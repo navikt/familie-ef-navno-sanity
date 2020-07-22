@@ -94,7 +94,7 @@ export default {
                                 type: 'object',
                                 title: 'Filreferanse',
                                 blockEditor: {
-                                    icon: () => 'PDF'
+                                    icon: () => 'Fil'
                                 },
                                 fields: [
                                     {
@@ -199,8 +199,52 @@ export default {
             of: [
                 {
                     type: 'block',
-                }
-            ],
+                    marks: {
+                        annotations: [
+                            {
+                                name: 'link',
+                                type: 'object',
+                                title: 'External link',
+                                fields: [
+                                    {
+                                        name: 'href',
+                                        type: 'url',
+                                        title: 'URL'
+                                    },
+                                    {
+                                        title: 'Open in new tab',
+                                        name: 'blank',
+                                        type: 'boolean'
+                                    }
+                                ]
+                            },
+                            {
+                                name: 'filreferanse',
+                                type: 'object',
+                                title: 'Filreferanse',
+                                blockEditor: {
+                                    icon: () => 'Fil'
+                                },
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        to: [
+                                            { type: 'pdf' },
+                                            // other types you may want to link to
+                                        ]
+                                    },
+                                    {
+                                        title: 'Open in new tab',
+                                        name: 'blank',
+                                        type: 'boolean'
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                },
+            ]
         }
     ],
     preview: {

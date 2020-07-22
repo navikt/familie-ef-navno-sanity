@@ -1,17 +1,17 @@
 export default {
-    title: 'pdf',
+    title: 'Fil',
     name: 'pdf',
     type: 'document',
     fields: [
       {
         name: 'pdfnavn',
         type: 'string',
-        title: 'Navn på PDF'
+        title: 'Navn på fil'
       },
       {
         name: 'pdf',
         type: 'file',
-        title: 'Navn på PDF'
+        title: 'Last opp fil'
       }
     ]
   }
