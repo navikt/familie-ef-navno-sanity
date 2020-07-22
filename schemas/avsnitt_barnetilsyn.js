@@ -105,6 +105,11 @@ export default {
                                             { type: 'pdf' },
                                             // other types you may want to link to
                                         ]
+                                    },
+                                    {
+                                        title: 'Open in new tab',
+                                        name: 'blank',
+                                        type: 'boolean'
                                     }
                                 ]
                             }
