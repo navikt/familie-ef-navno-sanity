@@ -13,6 +13,8 @@ import artikkel from './artikkel';
 import side from './side';
 import ikon from './ikon';
 import alertstripe from './alertstripe';
+import landingsside from './landingsside';
+import aktuelle_stonader_boks from './aktuelle_stonader_boks';
 import tall from './tall';
 import tabell from './tabell';
 import dato from './dato';
@@ -36,6 +38,8 @@ export default createSchema({
     side,
     ikon,
     alertstripe,
+    aktuelle_stonader_boks,
+    landingsside,
     tall,
     tabell,
     dato,
