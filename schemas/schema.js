@@ -7,7 +7,7 @@ import avsnitt_overgangstonad from './avsnitt_overgangsstonad';
 import avsnitt_barnetilsyn from './avsnitt_barnetilsyn';
 import avsnitt_skolepengerstønad from './avsnitt_skolepengerstønad';
 import avsnitt_tilleggstønad from './avsnitt_tilleggsstønad';
-import brodtekst from './brodtekst';
+import avsnitt_alene from './avsnitt_alene';
 import knapp from './knapp';
 import artikkel from './artikkel';
 import side from './side';
@@ -15,6 +15,10 @@ import ikon from './ikon';
 import alertstripe from './alertstripe';
 import landingsside from './landingsside';
 import aktuelle_stonader_boks from './aktuelle_stonader_boks';
+import tall from './tall';
+import tabell from './tabell';
+import dato from './dato';
+import pdf from './pdf';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,13 +32,17 @@ export default createSchema({
     avsnitt_barnetilsyn,
     avsnitt_skolepengerstønad,
     avsnitt_tilleggstønad,
-    brodtekst,
+    avsnitt_alene,
     knapp,
     artikkel,
     side,
     ikon,
     alertstripe,
     aktuelle_stonader_boks,
-    landingsside
+    landingsside,
+    tall,
+    tabell,
+    dato,
+    pdf,
   ])
 })

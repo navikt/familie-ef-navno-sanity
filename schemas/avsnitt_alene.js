@@ -1,7 +1,7 @@
 export default {
-    name: 'avsnitt_tilleggsstonad',
+    name: 'avsnitt_alene',
     type: 'document',
-    title: 'Avsnitt tilleggsstønad',
+    title: 'Avsnitt alene med barn',
     fields: [
         {
             title: 'Side, artikkel',
@@ -49,7 +49,7 @@ export default {
                                         to: [
                                             { type: 'artikkel' },
                                             { type: 'avsnitt_overgangstonad' },
-                                            { type: 'avsnitt_tilleggsstonad' },
+                                            { type: 'avsnitt_alene' },
                                         ]
                                     }
                                 ]
@@ -89,29 +89,6 @@ export default {
                                         ]
                                     }
                                 ]
-                            },
-                            {
-                                name: 'filreferanse',
-                                type: 'object',
-                                title: 'Filreferanse',
-                                blockEditor: {
-                                    icon: () => 'Fil'
-                                },
-                                fields: [
-                                    {
-                                        name: 'reference',
-                                        type: 'reference',
-                                        to: [
-                                            { type: 'pdf' },
-                                            // other types you may want to link to
-                                        ]
-                                    },
-                                    {
-                                        title: 'Open in new tab',
-                                        name: 'blank',
-                                        type: 'boolean'
-                                    }
-                                ]
                             }
                         ]
                     },
@@ -129,7 +106,37 @@ export default {
             type: 'boolean'
         },
         {
-            title: 'Vises hvis man huker av "Jeg tar utdanning"?',
+            title: 'Vises hvis man huker av "Jeg er alene pga. samlivsbrudd"?',
+            name: 'filtrer_samlivsbrudd',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg har vært alene med barn fra fødsel"?',
+            name: 'filtrer_fra_fodsel',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg er alene pga. dødsfall"?',
+            name: 'filtrer_dodsfall',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg har mer enn 60 % av den daglige omsorgen"?',
+            name: 'filtrer_mer_enn_60',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg har mer mindre enn 60 % av den daglige omsorgen"?',
+            name: 'filtrer_mindre_enn_60',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg er i arbeid"?',
+            name: 'filtrer_i_arbeid',
+            type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Jeg tar eller skal ta utdanning"?',
             name: 'filtrer_utdanning',
             type: 'boolean'
         },
@@ -137,6 +144,11 @@ export default {
             title: 'Vises hvis man huker av "Jeg er arbeidssøker"?',
             name: 'filtrer_arbeidssoker',
             type: 'boolean'
+        },
+        {
+            title: 'Vises hvis man huker av "Ikke i arbeid, utdanning, eller søker jobb?',
+            name: 'filtrer_ikke_arbeid',
+            type: 'boolean',
         },
         {
             name: 'alertstripe',

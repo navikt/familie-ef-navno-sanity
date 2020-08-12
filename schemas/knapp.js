@@ -1,6 +1,6 @@
 export default {
     name: 'knapp',
-    type: 'document',
+    type: 'object',
     title: 'Knapp',
     fields: [
       {
@@ -12,6 +12,11 @@ export default {
         name: 'lenke',
         type: 'string',
         title: 'Lenke',
-      }
+      },
+      {
+        name: 'bla',
+        type: 'boolean',
+        title: 'Skal knappen være helt blå (hovedknapp)?'
+    },
     ]
   }

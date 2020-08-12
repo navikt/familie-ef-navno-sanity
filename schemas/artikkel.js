@@ -18,6 +18,7 @@ export default {
         {
             name: 'artikkel_id',
             type: 'number',
+            description: 'IKKE endre denne hvis feltet er utfylt',
             title: 'Artikkel-ID',
             validation: Rule => Rule.required(),
         },
@@ -29,14 +30,16 @@ export default {
         {
             name: 'avsnitt',
             type: 'array',
-            title: 'avsnitt',
+            title: 'Avsnitt og tabeller',
             of: [{
                 type: 'reference',
                 to: [
                     { type: 'avsnitt_overgangstonad' },
                     { type: 'avsnitt_barnetilsyn' },
-                    { type: 'avsnitt_skolepengerstonad'},
-                    { type: 'avsnitt_tilleggsstonad'},
+                    { type: 'avsnitt_skolepengerstonad' },
+                    { type: 'avsnitt_tilleggsstonad' },
+                    { type: 'avsnitt_alene' },
+                    { type: 'tabell' },
                 ],
             }],
         },
@@ -60,7 +63,7 @@ export default {
     preview: {
         select: {
             title: 'tittel_i_panel',
-            subtitle: 'tittel_i_liste',
+            subtitle: 'artikkel_id',
         }
     }
 }

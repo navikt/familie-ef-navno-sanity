@@ -1,29 +1,76 @@
 export default {
     name: 'alertstripe',
-    type: 'document',
+    type: 'object',
     title: 'Alertstripe',
     fields: [
-        {
-            title: 'Overskrift',
-            name: 'alertstripe_overskrift',
-            type: 'string',
-            description: 'Brukes kun for å holde oversikt.'
-        },
         {
             title: 'Innhold',
             name: 'alertstripe_innhold',
             type: 'array',
-            of: [{ type: 'block' }],
-        },
-        {
-            title: 'Alertstripe-ID',
-            name: 'alertstripe_id',
-            type: 'string',
-            description: 'Brukes for informasjonsboksene øverst på hver side',
+            of: [
+                {
+                    type: 'block',
+                    marks: {
+                        annotations: [
+                            {
+                                name: 'link',
+                                type: 'object',
+                                title: 'External link',
+                                fields: [
+                                    {
+                                        name: 'href',
+                                        type: 'url',
+                                        title: 'URL'
+                                    },
+                                    {
+                                        title: 'Open in new tab',
+                                        name: 'blank',
+                                        type: 'boolean'
+                                    }
+                                ]
+                            },
+                            {
+                                name: 'internalLink',
+                                type: 'object',
+                                title: 'Internal link',
+                                fields: [
+                                    {
+                                        name: 'reference',
+                                        type: 'reference',
+                                        title: 'Reference',
+                                        to: [
+                                            { type: 'artikkel' },
+                                            // other types you may want to link to
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
         },
         {
             title: 'Skal alertstripen være aktivert?',
             name: 'alertstripe_aktiv',
+            type: 'boolean',
+        },
+        {
+            title: 'Informasjon',
+            description: 'Skal alertstripen være en informasjonsboks?',
+            name: 'alertstripe_info',
+            type: 'boolean',
+        },
+        {
+            title: 'Advarsel',
+            description: 'Skal alertstripen vises som en advarsel?',
+            name: 'alertstripe_advarsel',
+            type: 'boolean',
+        },
+        {
+            title: 'Ikon',
+            description: 'Skal alertstripen inneholde et ikon?',
+            name: 'alertstripe_ikon',
             type: 'boolean',
         }
     ],
