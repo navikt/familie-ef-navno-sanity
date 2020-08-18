@@ -1,3 +1,11 @@
+import React from 'react';
+import styles from './styles/styles.css';
+
+const EtikettPreview = ({value}) => {
+	const { etikett } = value
+	return (<div className={styles.etikett}>{etikett}</div>)
+}
+
 export default {
     name: 'avsnitt_tilleggsstonad',
     type: 'document',
@@ -112,10 +120,28 @@ export default {
                                         type: 'boolean'
                                     }
                                 ]
-                            }
+                            },
                         ]
                     },
                 },
+                {
+                    name: 'etikett',
+                    type: 'object',
+                    title: 'Etikett',
+                    fields: [
+                    {
+                        name: 'etikett',
+                        type: 'string'
+                    }
+                    ],
+                    preview: {
+                        select: {
+                            etikett: 'etikett'
+                        },
+                        component: EtikettPreview
+                    }
+                  
+                }
             ]
         },
         {

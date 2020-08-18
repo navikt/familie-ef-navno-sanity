@@ -123,6 +123,19 @@ export default {
             title: 'Knapp',
         },
         {
+            title: 'Kategori',
+            name: 'kategori',
+            description: 'Bare filtre som angår denne kategorien vil påvirke avsnittet.',
+            type: 'string',
+            options: {
+              list: [
+                {title: 'Hvor gammel er det yngste barnet ditt?', value: 'alder'},
+                {title: 'Hva er situasjonen din?', value: 'situasjon'}
+              ],
+              layout: 'dropdown'
+            }
+        },
+        {
             title: 'Skal teksten alltid bli stående?',
             name: 'filtrer_blir_staende',
             type: 'boolean'

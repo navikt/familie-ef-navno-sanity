@@ -96,10 +96,25 @@ export default {
             ]
         },
         {
+            title: 'Kategori',
+            name: 'kategori',
+            description: 'Bare filtre som angår disse kategorien vil påvirke avsnittet.',
+            type: 'array',
+            of: [{type: 'string'}],          
+            options: {
+              list: [
+                {title: 'Hvorfor er du alene med barn?', value: 'hvorfor_alene'},
+                {title: 'Hvor mye av den daglige omsorgen?', value: 'hvor_mye_omsorg'},
+                {title: 'Hva er arbeidssituasjonen din?', value: 'arbeidssituasjon'},                
+              ],
+              layout: 'dropdown'
+            }
+        },
+        {
             name: 'knapp',
             type: 'knapp',
             title: 'Knapp',
-        },
+        }, 
         {
             title: 'Skal teksten alltid bli stående?',
             name: 'filtrer_blir_staende',
