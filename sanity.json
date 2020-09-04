@@ -15,7 +15,10 @@
     "@sanity/desk-tool",
     "@sanity/vision",
     "datatable",
-    "content-model-graph"
+    "content-model-graph",
+    "@sanity/dashboard",
+    "dashboard-widget-document-chart",
+    "dashboard-widget-notes"
   ],
   "env": {
     "development": {
@@ -28,6 +31,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./dashboardConfig.js"
     }
   ]
 }
