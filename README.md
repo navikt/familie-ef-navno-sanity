@@ -1,9 +1,11 @@
-# Sanity Clean Content Studio
+# familie-ef-navno-sanity
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+Kodebasen til sanity-prosjektet `familie-ef-navno-sanity`. Sanity-prosjektet er ikke lenger i bruk men har blitt arkivert for å ta vare på versjonshistorikk. Dette er et lovpålagt krav, og informasjonen som hentes ut må kunne brukes i klagesaker flere år fram i tid, selv om slike klagesaker ansees som svært lite sannsynlige.
 
-Now you can do the following things:
+Url til sanity-studio: `https://www.sanity.io/organizations/ojSsHMQGf/project/f837udrm`
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+## Henvendelser 
+
+### For NAV-ansatte
+
+Interne henvendelser kan sendes via Slack i kanalen #team-familie.
